@@ -12,7 +12,7 @@ import ContactForm from './ContactForm';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="iletisim" className="bg-black text-white" role="contentinfo" aria-labelledby="contact-heading">
+    <footer id="iletisim" className="bg-navy-dark text-white" role="contentinfo" aria-labelledby="contact-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Information */}
@@ -92,25 +92,25 @@ const Footer: React.FC = () => {
               <div className="flex space-x-4">
                 <a 
                   href="#" 
-                  className="bg-gray-800 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  className="bg-navy/80 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a 
                   href="#" 
-                  className="bg-gray-800 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  className="bg-navy/80 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a 
                   href="#" 
-                  className="bg-gray-800 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  className="bg-navy/80 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                   <Linkedin className="w-5 h-5" />
                 </a>
                 <a 
                   href="#" 
-                  className="bg-gray-800 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+                  className="bg-navy/80 hover:bg-red-500 hover:text-white w-12 h-12 rounded-lg flex items-center justify-center transition-all duration-300 transform hover:scale-110"
                 >
                   <Twitter className="w-5 h-5" />
                 </a>
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Copyright */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-navy-light/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-gray-400">

@@ -24,7 +24,7 @@ const features = [
 
 const WhyChooseUs: React.FC = () => {
   return (
-    <section id="hakkimizda" className="py-20 bg-gray-900" role="region" aria-labelledby="about-heading">
+    <section id="hakkimizda" className="py-20 bg-navy" role="region" aria-labelledby="about-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="about-heading" className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -34,7 +34,6 @@ const WhyChooseUs: React.FC = () => {
             Isinizi buyutmek icin ihtiyac duydugunuz tum dijital cozumleri tek cati altinda sunuyoruz. 
             Deneyim, kalite ve musteri memnuniyeti odakli yaklasimimizla fark yaratiyoruz.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mt-8 rounded-full"></div>
           <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto mt-8 rounded-full"></div>
         </div>
 
@@ -44,7 +43,7 @@ const WhyChooseUs: React.FC = () => {
             return (
               <div
                 key={index}
-                className="group relative bg-black/50 backdrop-blur-sm border border-red-500/20 rounded-2xl p-8 hover:border-red-400/50 hover:bg-black/70 transition-all duration-500 text-center"
+                className="group relative bg-navy-dark/80 backdrop-blur-sm border border-navy-light/30 rounded-2xl p-8 hover:border-red-500/60 hover:bg-navy-dark transition-all duration-500 text-center hover-scale"
                 role="article"
                 aria-labelledby={`feature-${index}`}
               >
@@ -85,9 +84,14 @@ const WhyChooseUs: React.FC = () => {
             >
               Hemen Ara: 0553 874 64 19
             </a>
-            <button className="border-2 border-red-400 text-red-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-400 hover:text-white transition-all duration-300">
+            <a
+              href="https://wa.me/905538746419"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="border-2 border-red-400 text-red-400 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-400 hover:text-white transition-all duration-300"
+            >
               Mesaj Gönder
-            </button>
+            </a>
           </div>
         </div>
       </div>

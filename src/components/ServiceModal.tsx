@@ -23,7 +23,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
       ></div>
       
       {/* Modal */}
-      <div className="relative bg-gray-900 border border-red-500/30 rounded-2xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto">
+      <div className="relative bg-navy border border-navy-light/50 rounded-2xl p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto">
         <div className="flex items-center justify-between mb-6">
           <h3 className="text-2xl font-bold text-white">{service.title}</h3>
           <button
@@ -39,7 +39,7 @@ const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, onClose, service })
             {service.detailedDescription}
           </p>
           
-          <div className="border-t border-red-500/20 pt-4">
+          <div className="border-t border-navy-light/30 pt-4">
             <button
               onClick={onClose}
               className="w-full bg-gradient-to-r from-red-500 to-red-700 text-white py-3 rounded-lg font-semibold hover:from-red-600 hover:to-red-800 transition-all duration-300"

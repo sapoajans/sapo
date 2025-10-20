@@ -79,7 +79,7 @@ const Services: React.FC = () => {
 
   return (
     <>
-      <section id="hizmetler" className="py-20 bg-gray-900" role="region" aria-labelledby="services-heading">
+      <section id="hizmetler" className="py-20 bg-navy" role="region" aria-labelledby="services-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="services-heading" className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -89,7 +89,6 @@ const Services: React.FC = () => {
             İşletmenizin her ihtiyacına yönelik profesyonel dijital çözümler sunuyoruz. 
             Yaratıcılık ve teknoloji bir araya geliyor. SEO uyumlu, hızlı ve etkili dijital hizmetler.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mt-8 rounded-full"></div>
           <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto mt-8 rounded-full"></div>
         </div>
 
@@ -99,7 +98,7 @@ const Services: React.FC = () => {
             return (
               <div
                 key={index}
-                className="group bg-black/50 backdrop-blur-sm border border-red-500/20 rounded-xl p-6 hover:border-red-400/50 hover:bg-black/70 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105"
+                className="group bg-navy-dark/80 backdrop-blur-sm border border-navy-light/30 rounded-xl p-6 hover:border-red-500/60 hover:bg-navy-dark transition-all duration-500 hover-scale cursor-pointer"
                 role="article"
                 aria-labelledby={`service-${index}`}
               >

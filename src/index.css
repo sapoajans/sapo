@@ -2,37 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Heartbeat Animation */
-@keyframes heartbeat {
-  0% { stroke-dashoffset: 1000; }
-  100% { stroke-dashoffset: 0; }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
-.heartbeat-path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: heartbeat 3s ease-in-out infinite;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.heartbeat-line {
-  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.3));
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Header Animation */
-@keyframes slideText {
-  0%, 40% { opacity: 1; transform: translateX(0); }
-  50%, 100% { opacity: 0; transform: translateX(-20px); }
+.animate-fadeInUp {
+  animation: fadeInUp 0.8s ease-out forwards;
 }
 
-@keyframes slideIcons {
-  0%, 50% { opacity: 0; transform: translateX(20px); }
-  60%, 100% { opacity: 1; transform: translateX(0); }
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
-.animate-slide-text {
-  animation: slideText 4s ease-in-out infinite;
+.hover-scale {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.animate-slide-icons {
-  animation: slideIcons 4s ease-in-out infinite;
+.hover-scale:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }

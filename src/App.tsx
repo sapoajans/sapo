@@ -17,7 +17,7 @@ function App() {
         <Route path="/admin" element={<AdminPanel />} />
         <Route path="/portfolio/:id" element={<PortfolioDetail />} />
         <Route path="/" element={
-          <div className="bg-black text-white min-h-screen">
+          <div className="bg-navy-dark text-white min-h-screen">
             <Header />
             <Hero />
             <Services />

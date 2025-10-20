@@ -49,7 +49,7 @@ const portfolioItems = [
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="portfoy" className="py-20 bg-black" role="region" aria-labelledby="portfolio-heading">
+    <section id="portfoy" className="py-20 bg-navy-dark" role="region" aria-labelledby="portfolio-heading">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 id="portfolio-heading" className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -59,7 +59,6 @@ const Portfolio: React.FC = () => {
             Musterilerimiz icin gerceklestirdigimiz basarili dijital projelerden bir secki. 
             Her proje, markanin benzersizligini yansitacak sekilde ozenle tasarlanmistir.
           </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-600 mx-auto mt-8 rounded-full"></div>
           <div className="w-24 h-1 bg-gradient-to-r from-red-400 to-red-600 mx-auto mt-8 rounded-full"></div>
         </div>
 
@@ -67,7 +66,7 @@ const Portfolio: React.FC = () => {
           {portfolioItems.map((item, index) => (
             <div
               key={index}
-              className="group relative bg-gray-900 rounded-xl overflow-hidden hover:transform hover:scale-105 transition-all duration-500"
+              className="group relative bg-navy/80 rounded-xl overflow-hidden hover-scale"
               role="article"
               aria-labelledby={`portfolio-${index}`}
             >
@@ -81,9 +80,9 @@ const Portfolio: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 right-4">
                     <div className="flex space-x-3">
-                      <Link 
+                      <Link
                         to={`/portfolio/${item.id}`}
-                        className="bg-yellow-400 text-black p-2 rounded-lg hover:bg-yellow-500 transition-colors duration-300"
+                        className="bg-red-500 text-white p-2 rounded-lg hover:bg-red-600 transition-colors duration-300"
                       >
                         <Eye className="w-4 h-4" />
                       </Link>
@@ -108,9 +107,12 @@ const Portfolio: React.FC = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="bg-gradient-to-r from-red-500 to-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105">
+          <a
+            href="#iletisim"
+            className="inline-block bg-gradient-to-r from-red-500 to-red-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-red-600 hover:to-red-800 transition-all duration-300 transform hover:scale-105"
+          >
             Tüm Projelerimizi Gör
-          </button>
+          </a>
         </div>
       </div>
     </section>
